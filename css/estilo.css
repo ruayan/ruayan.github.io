@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+
+/*------------------encabezado---------------*/
+.encabezado{
+    background-image: url(../img/head.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows:  1fr;
+    grid-template-columns: 1fr;
+    
+}
+
+/*-------nav--------*/
+.encabezado__nav{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(80deg,rgb(0, 0, 0),rgba(63, 29, 3, 0.145));
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgba(203, 167, 100, 0.481);
+    background-origin: center;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.encabezado__nav__logo{
+    width: 170px;
+    height: 36px;
+    margin-left: 10px;
+
+}
+
+.encabezado__nav__menu-responsive{
+    color: rgb(255, 255, 255);
+    display: none;
+}
+
+.encabezado__nav__check-responsive{
+    display: none;
+}
+
+
+.encabezado__nav__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.encabezado__nav__enlace-responsive{
+    display: none
+}
+
+.encabezado__nav__enlace{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+
+.encabezado__nav__enlace-responsive a {
+    text-decoration: none;
+    color: white;
+    font-size: .7em;
+    transition: color .1s;
+}
+
+.encabezado__nav__enlace-responsive a:hover{
+    color: rgb(219, 110, 94);
+}
+
+
+.encabezado__nav__enlace a {
+    text-decoration: none;
+    color: white;
+    font-size: .7em;
+    transition: color .1s;
+}
+
+.encabezado__nav__enlace a:hover{
+    color: rgb(219, 110, 94);
+}
+
+/*=======nav-final======*/
+
+.encabezado__info{
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    transform: translateY(50%);
+}
+
+.encabezado__info h1{
+    color: white;
+    font-size: 5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+
+.encabezado__info h2{
+    color: white;
+    font-size: 1.5em;
+   
+}
+
+/*============encabedo-final==============*/
+
+/*------------section 1-------------------*/
+.section1-bebida{
+    background: linear-gradient(rgb(0, 0, 0) .2%,rgb(232, 84, 35),rgb(58, 39, 0));
+    
+}
+
+.section1-bebida .containers1{
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    max-width: 1500px;
+    margin: auto;
+    min-height: 100vh;
+
+}
+
+.section1-bebida__titulo{
+    justify-self: center;
+    align-self: center;
+    transform: translatey(25px);
+    color: rgb(255, 203, 173);
+    font-size: 2.3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.section1-bebida__info{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    
+    justify-self: center;
+    gap: 20px;
+    color: white;
+    
+}
+
+.section1-bebida__info p{
+    line-height: 1.9;
+    padding-bottom: 30px;
+}
+.section1-bebida__info__bebida-img{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    align-content: start;
+    gap: 20px;
+    grid-template-rows: minmax(0px, 310px) 30px 80px;
+    
+}
+
+.section1-bebida__info__bebida-img img{
+    width: 90%;
+    max-width: 300px;
+    clip-path: inset(3% 0 0 0 round 5% 20% 0 10%);
+}
+
+.section1-bebida__info__bebida-img button{
+    width: 60%;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: rgb(255, 68, 0);
+    color: white;
+    transition: box-shadow .4s, background .2s;
+    cursor: pointer;
+}
+
+.section1-bebida__info__bebida-img button:hover{
+    box-shadow: 0 0 20px rgb(255, 94, 0),0 0 20px rgb(250, 250, 250);
+    background: rgb(255, 145, 0)
+}
+
+/*==================section 1===========*/
+
+/*--------------section 2---------------*/
+.section2-galeria{
+    background: url(../img/galeria.png);
+    background-attachment: fixed;
+}
+
+.section2-galeria .containers2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    min-height: 100vh;
+    margin: auto;
+    max-width: 1500px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.section2-galeria__titulo{
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    font-size: 3.5em;
+    color: rgb(255, 251, 243);
+}
+
+.section2-galeria__galeria{
+    justify-self: center;
+    width:90%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(165px,1fr));
+    grid-auto-rows: 170px;
+   
+}
+
+.section2-galeria__galeria a{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    transition: overflow .3s;
+    
+    
+}  
+
+.section2-galeria__galeria a:hover{
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+}
+
+.section2-galeria__galeria img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    transition: transform .7s;
+
+}  
+
+.section2-galeria__galeria img:hover{
+    
+    transform: scale(1.3);
+    border: 5px solid rgb(246, 104, 10);
+    border-radius: 3px;
+
+}  
+
+/*================section2=============*/
+
+/*--------------------section3---------*/
+.section3-carrusel{
+    background: linear-gradient(150deg,rgb(56, 23, 0) 50%, rgb(217, 94, 0));
+    background-attachment: fixed;
+    
+    
+}
+
+.section3-carrusel .containers3{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 140px 1fr;
+    grid-template-columns: 1fr;
+    
+
+}
+
+.section3-carrusel__titulo{
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    color: white;
+    font-family: cursive;
+    font-size: 3em;
+    
+}
+
+.section3-carrusel__carrusel{
+    width: 80%;
+    margin: 0 auto;
+    height: 95%;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    overflow: hidden;
+    
+}
+.section3-carrusel__carrusel__content{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: carrusel 20s infinite alternate ease-in-out;
+    
+    
+}
+.section3-carrusel__carrusel__content__imagen{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: relative;
+    
+}
+
+.section3-carrusel__carrusel__content__imagen__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section3-carrusel__carrusel__content__imagen__texto{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 200px;
+    width: 100%;
+}
+
+.section3-carrusel__carrusel__content__imagen__texto h3{
+    color: rgb(88, 255, 199);
+    text-shadow: 0 0 30px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0),0 0 20px rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.section3-carrusel__carrusel__content__imagen__texto p{
+    font-weight: 600;
+    text-shadow: 0 0 30px white, 0 0 30px white, 0 0 30px white;
+}
+
+/*-----------footer--------------*/
+.footer{
+    background: linear-gradient(90deg,rgb(17, 17, 17) ,rgb(38, 38, 38),rgb(17, 17, 17));
+    width: 100%;
+    
+}
+
+.footer__titulo{
+    text-align: center;
+    color: rgb(134, 134, 134);
+    padding: 10px 0;
+    font-size: .8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer__contacto{
+    height: 70px;
+    width: fit-content;
+    margin: auto;
+}
+.footer__contacto h4{
+    text-align: center;
+    color: rgb(134, 134, 134);
+    padding-bottom: 15px;
+    font-size: .67em;
+    font-family: cursive;
+
+}
+
+.footer__contacto__icon{
+    margin: auto;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacto__icon i{
+    font-size: 23px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.footer__contacto__icon i:first-child{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: color .3s, text-shadow .3s;
+}
+
+.footer__contacto__icon i:first-child:hover{
+    color: rgb(46, 67, 250);
+    text-shadow: 0 0 10px rgb(149, 181, 252);
+   
+}
+
+.footer__contacto__icon i:nth-child(2){
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: color .3s, text-shadow .3s;
+}
+
+.footer__contacto__icon i:nth-child(2):hover{
+    color: rgb(54, 128, 255);
+    text-shadow: 0 0 7px white;
+}
+
+.footer__contacto__icon i:nth-child(3){
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: color .3s, text-shadow .3s;
+}
+
+
+.footer__contacto__icon i:nth-child(3):hover{
+    color: rgb(54, 255, 88);
+    text-shadow: 0 0 10px white;
+}
+
+.footer__contacto__icon i:nth-child(4){
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: color .3s, text-shadow .3s;
+}
+
+.footer__contacto__icon i:nth-child(4):hover{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px white;
+}
+@keyframes carrusel{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+@media screen and (max-width:650px) {
+
+    .encabezado__nav{
+        height: 70px;
+        background: rgb(4, 1, 6);
+        display: flex;
+    }
+    .encabezado__nav__enlace{
+        display: none;
+    }
+    .encabezado__nav__enlace-responsive{
+
+        display:flex;
+        position: absolute;
+        clip-path: circle(0% at 100% 0);
+        transition: position, clip-path  1s;
+        background: linear-gradient(rgb(9, 1, 28), rgb(62, 39, 2));
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        
+    }
+
+    
+
+    .encabezado__nav__check-responsive:checked + .encabezado__nav__enlace-responsive{
+        
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        z-index: 50;
+        clip-path: circle(142% at 100% 0);
+
+    }
+
+    .encabezado__nav__menu-responsive{
+        cursor: pointer;
+        margin-right: 10px;
+        display: inline-block;
+        color: aliceblue;
+        
+    }
+
+    .encabezado__nav__menu-responsive i{
+        display: inline-block;
+        color: aliceblue;
+        font-size: 2em;
+        
+        
+    }
+    .encabezado__info h1{
+        color: white;
+        font-size: 2.2em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 5px;
+    }
+    
+    .encabezado__info h2{
+        color: white;
+        font-size: 1.1em;
+       
+    }
+
+    .section1-bebida .containers1{
+        display: grid;
+        grid-template-rows: 140px 1fr;
+        max-width: 2000px;
+        margin: auto;
+        min-height: 100vh;
+    
+    }
+
+    .section1-bebida__titulo{
+        justify-self: center;
+        align-self: center;
+        color: rgb(255, 203, 173);
+        font-size: 1.2em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .section1-bebida__info p{
+        line-height: 1.5;
+        
+    }
+
+    .section1-bebida__info__bebida-img img{
+        align-self: center;
+    }
+
+    .section2-galeria__titulo{
+        text-align: center;
+        align-self: center;
+        margin: auto;
+        font-size: 2.5em;
+    }
+
+    .section3-carrusel__titulo{
+        font-size: 2em;
+        
+    }
+   
+}
+
+
+@media screen and (max-width:440px) {
+    .section1-bebida__info{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+        
+        justify-self: center;
+        gap: 20px;
+        color: white;
+        
+    }
+
+    .section1-bebida__info p{
+        line-height: 1.6;
+       
+    }
+    .section1-bebida__info__bebida-img{
+        grid-template-rows: minmax(0px,340px ) 20px 80px;
+        
+    }
+
+    .section2-galeria__titulo{
+        text-align: center;
+        align-self: center;
+        margin: auto;
+        font-size: 1.8em;
+    }
+
+    .section2-galeria__galeria{
+        
+        grid-template-columns: repeat(auto-fill,minmax(185px,1fr));
+        grid-template-rows: repeat(auto-fill,minmax(165px,1fr));
+        
+    }
+
+    .section2-galeria__galeria img{
+        border: 5px solid rgb(119, 83, 6);
+    }
+
+    .section3-carrusel__titulo{
+        font-size: 1.4em;
+        
+    }
+   
+
+}
+
+
+@media screen and (max-width:280px) {
+    
+    .section1-bebida__info__bebida-img{
+        grid-template-rows: minmax(0px,230px ) 20px 80px;
+        
+    }
+}
